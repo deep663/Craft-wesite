@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore unique handcrafted gifts at Cosmic Web Craft. Discover custom dreamcatchers, embroidery hoops, and more, all made with love. Perfect for any occasion!"
+    />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <title>Dream Craft's</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+      .header-title {
+        font-family: "Pacifico", cursive;
+      }
+      .contact-banner {
+        transition: all 0.3s ease-in-out;
+      }
+      /* Responsive Adjustments */
+      @media (max-width: 768px) {
+        nav {
+          display: none;
+        }
+        .menu-icon {
+          display: block;
+          cursor: pointer;
+        }
+        .responsive-nav {
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+          position: absolute;
+          top: 60px;
+          right: 10px;
+          background: white;
+          border: 1px solid #e2e8f0;
+          padding: 10px;
+          z-index: 1000;
+          display: none;
+        }
+        .responsive-nav.active {
+          display: flex;
+        }
+      }
+    </style>
+  </head>
+  <body class="font-sans bg-gray-50 relative">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-md py-4 sticky top-0 z-50">
+      <div class="container mx-auto flex justify-between items-center px-4">
+        <div class="text-2xl font-bold text-rose-500 header-title">
+          Dream Craft's
+        </div>
+        <i class="fas fa-bars text-gray-700 menu-icon lg:hidden block"></i>
+        <nav class="space-x-6 hidden lg:flex">
+          <a href="#home" class="text-gray-700 hover:text-rose-500"
+            ><i class="fas fa-home"></i> Home</a
+          >
+          <a href="#portfolio" class="text-gray-700 hover:text-rose-500"
+            ><i class="fas fa-th"></i> Portfolio</a
+          >
+          <a
+            id="headerContactLink"
+            href="#contact"
+            class="text-gray-700 hover:text-rose-500"
+            ><i class="fas fa-envelope"></i> Contact</a
+          >
+        </nav>
+        <!-- Responsive Navigation -->
+        <div class="responsive-nav lg:hidden">
+          <a href="#home" class="text-gray-700 hover:text-rose-500"
+            ><i class="fas fa-home"></i> Home</a
+          >
+          <a href="#portfolio" class="text-gray-700 hover:text-rose-500"
+            ><i class="fas fa-th"></i> Portfolio</a
+          >
+          <a
+            id="headerContactLink"
+            href="#contact"
+            class="text-gray-700 hover:text-rose-500"
+            ><i class="fas fa-envelope"></i> Contact</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <section
+      id="home"
+      class="relative bg-cover bg-center h-screen"
+      style="background-image: url('bg-image-3.jpg')"
+    >
+      <div class="absolute inset-0 bg-black opacity-30"></div>
+      <div class="relative z-10 flex items-center justify-center h-full">
+        <div
+          class="text-center text-white space-y-6 flex flex-col justify-center items-center"
+        >
+          <h1 class="text-4xl font-semibold header-title">
+            Handcrafted Creations for Every Occasion
+          </h1>
+          <p class="text-lg">Unique, artistic pieces crafted with love</p>
+          <a
+            href="#portfolio"
+            class="bg-rose-500 text-white px-6 py-2 rounded-full hover:bg-rose-600 transition"
+            >Shop Now</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Categories Section -->
+    <section id="portfolio" class="py-16 bg-gray-100">
+      <div class="container mx-auto px-4">
+        <h2
+          class="text-3xl text-center font-semibold text-gray-800 mb-10 header-title"
+        >
+          Our Craft Collections
+        </h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-8">
+          <div
+            class="bg-white p-6 rounded-lg shadow-lg text-center group hover:shadow-xl transition-shadow duration-300"
+          >
+            <img
+              src="collection-1.jpg"
+              alt="Embroidery Hoops"
+              class="w-full h-[100px] md:h-[300px] object-cover rounded-md mb-4 group-hover:scale-105 transition-all duration-300"
+            />
+            <h3
+              class="text-sm md:text-xl font-semibold text-gray-800 mb-2 group-hover:text-rose-600 transition-colors duration-300"
+            >
+              Embroidery Hoops
+            </h3>
+            <p
+              class="text-xs text-gray-600 mb-4 group-hover:text-gray-800 transition-colors duration-300"
+            >
+              Custom-designed embroidery hoops for unique gifts.
+            </p>
+          </div>
+          <div
+            class="bg-white p-6 rounded-lg shadow-lg text-center group hover:shadow-xl transition-shadow duration-300"
+          >
+            <img
+              src="collection-2.jpg"
+              alt="Gift Combos"
+              class="w-full h-[100px] md:h-[300px] object-cover rounded-md mb-4 group-hover:scale-105 transition-all duration-300"
+            />
+            <h3
+              class="text-sm md:text-xl font-semibold text-gray-800 mb-2 group-hover:text-rose-600 transition-colors duration-300"
+            >
+              Gift Combos
+            </h3>
+            <p
+              class="text-xs text-gray-600 mb-4 group-hover:text-gray-800 transition-colors duration-300"
+            >
+              Perfectly curated gift hampers for every occasion.
+            </p>
+          </div>
+          <div
+            class="bg-white p-6 rounded-lg shadow-lg text-center group hover:shadow-xl transition-shadow duration-300"
+          >
+            <img
+              src="collection-3.jpg"
+              alt="Dreamcatchers"
+              class="w-full h-[100px] md:h-[300px] object-cover rounded-md mb-2 group-hover:scale-105 transition-all duration-300"
+            />
+            <h3
+              class="text-sm md:text-xl font-semibold text-gray-800 mb-2 group-hover:text-rose-600 transition-colors duration-300"
+            >
+              Dreamcatchers
+            </h3>
+            <p
+              class="text-xs text-gray-600 mb-4 group-hover:text-gray-800 transition-colors duration-300"
+            >
+              Handcrafted dreamcatchers to add elegance to any space.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="pb-16 bg-gray-100">
+      <div class="container mx-auto px-4">
+        <h2
+          class="text-3xl text-center font-semibold text-gray-800 mb-10 header-title"
+        >
+          Our Gallery
+        </h2>
+        <div class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-2  gap-4 md:gap-8">
+          <!-- Gallery Item 1 -->
+          <div class="relative group">
+            <img
+              src="gallery-embro-4.jpg"
+              alt="Embroidery Image 4"
+              class="w-full h-[100px] md:h-[300px] object-cover rounded-lg shadow-lg cursor-pointer group-hover:scale-105 transition-all duration-300"
+              onclick="openPopup('gallery-embro-4.jpg')"
+            />
+          </div>
+
+          <!-- Gallery Item 2 -->
+          <div class="relative group">
+            <img
+              src="gallery-dream-6.jpg"
+              alt="Dreamcatcher Image 6"
+              class="w-full h-[100px] md:h-[300px] object-cover rounded-lg shadow-lg cursor-pointer group-hover:scale-105 transition-all duration-300"
+              onclick="openPopup('gallery-dream-6.jpg')"
+            />
+          </div>
+
+          <!-- Gallery Item 3 -->
+          <div class="relative group">
+            <img
+              src="gallery-gift-5.jpg"
+              alt="Gift Image 5"
+              class="w-full h-[100px] md:h-[300px] object-cover rounded-lg shadow-lg cursor-pointer group-hover:scale-105 transition-all duration-300"
+              onclick="openPopup('gallery-gift-5.jpg')"
+            />
+          </div>
+
+          <!-- Gallery Item 4 -->
+          <div class="relative group">
+            <img
+              src="gallery-dream-2.jpg"
+              alt="Dreamcatcher Image 2"
+              class="w-full h-[100px] md:h-[300px] object-cover rounded-lg shadow-lg cursor-pointer group-hover:scale-105 transition-all duration-300"
+              onclick="openPopup('gallery-dream-2.jpg')"
+            />
+          </div>
+
+          <!-- Gallery Item 5 -->
+          <div class="relative group">
+            <img
+              src="gallery-gift-4.jpg"
+              alt="Gift Image 4"
+              class="w-full h-[100px] md:h-[300px] object-cover rounded-lg shadow-lg cursor-pointer group-hover:scale-105 transition-all duration-300"
+              onclick="openPopup('gallery-gift-4.jpg')"
+            />
+          </div>
+
+          <!-- Gallery Item 6 -->
+          <div class="relative group">
+            <img
+              src="gallery-gift-1.jpg"
+              alt="Gift Image 1"
+              class="w-full h-[100px] md:h-[300px] object-cover rounded-lg shadow-lg cursor-pointer group-hover:scale-105 transition-all duration-300"
+              onclick="openPopup('gallery-gift-1.jpg')"
+            />
+          </div>
+
+          <!-- Gallery Item 7 -->
+          <div class="relative group">
+            <img
+              src="gallery-dream-4.jpg"
+              alt="Dreamcatcher Image 4"
+              class="w-full h-[100px] md:h-[300px] object-cover rounded-lg shadow-lg cursor-pointer group-hover:scale-105 transition-all duration-300"
+              onclick="openPopup('gallery-dream-4.jpg')"
+            />
+          </div>
+
+          <!-- Gallery Item 8 -->
+          <div class="relative group">
+            <img
+              src="gallery-dream-5.jpg"
+              alt="Dreamcatcher Image 5"
+              class="w-full h-[100px] md:h-[300px] object-cover rounded-lg shadow-lg cursor-pointer group-hover:scale-105 transition-all duration-300"
+              onclick="openPopup('gallery-dream-5.jpg')"
+            />
+          </div>
+
+          <!-- Gallery Item 9 -->
+          <div class="relative group">
+            <img
+              src="gallery-gift-2.jpg"
+              alt="Gift Image 2"
+              class="w-full h-[100px] md:h-[300px] object-cover rounded-lg shadow-lg cursor-pointer group-hover:scale-105 transition-all duration-300"
+              onclick="openPopup('gallery-gift-2.jpg')"
+            />
+          </div>
+
+          <!-- Gallery Item 10 -->
+          <div class="relative group">
+            <img
+              src="gallery-embro-5.jpg"
+              alt="Embroidery Image 5"
+              class="w-full h-[100px] md:h-[300px] object-cover rounded-lg shadow-lg cursor-pointer group-hover:scale-105 transition-all duration-300"
+              onclick="openPopup('gallery-embro-5.jpg')"
+            />
+          </div>
+
+          <!-- Gallery Item 11 -->
+          <div class="relative group">
+            <img
+              src="gallery-gift-6.jpg"
+              alt="Gift Image 6"
+              class="w-full h-[100px] md:h-[300px] object-cover rounded-lg shadow-lg cursor-pointer group-hover:scale-105 transition-all duration-300"
+              onclick="openPopup('gallery-gift-6.jpg')"
+            />
+          </div>
+
+          <!-- Gallery Item 12 -->
+          <div class="relative group">
+            <img
+              src="gallery-embro-1.jpg"
+              alt="Embroidery Image 1"
+              class="w-full h-[100px] md:h-[300px] object-cover rounded-lg shadow-lg cursor-pointer group-hover:scale-105 transition-all duration-300"
+              onclick="openPopup('gallery-embro-1.jpg')"
+            />
+          </div>
+
+          <!-- Gallery Item 13 -->
+          <div class="relative group">
+            <img
+              src="gallery-embro-3.jpg"
+              alt="Embroidery Image 3"
+              class="w-full h-[100px] md:h-[300px] object-cover rounded-lg shadow-lg cursor-pointer group-hover:scale-105 transition-all duration-300"
+              onclick="openPopup('gallery-embro-3.jpg')"
+            />
+          </div>
+
+          <!-- Gallery Item 14 -->
+          <div class="relative group">
+            <img
+              src="gallery-gift-3.jpg"
+              alt="Gift Image 3"
+              class="w-full h-[100px] md:h-[300px] object-cover rounded-lg shadow-lg cursor-pointer group-hover:scale-105 transition-all duration-300"
+              onclick="openPopup('gallery-gift-3.jpg')"
+            />
+          </div>
+
+          <!-- Gallery Item 15 -->
+          <div class="relative group">
+            <img
+              src="gallery-dream-1.jpg"
+              alt="Dreamcatcher Image 1"
+              class="w-full h-[100px] md:h-[300px] object-cover rounded-lg shadow-lg cursor-pointer group-hover:scale-105 transition-all duration-300"
+              onclick="openPopup('gallery-dream-1.jpg')"
+            />
+          </div>
+
+          <!-- Gallery Item 16 -->
+          <div class="relative group">
+            <img
+              src="gallery-dream-7.jpg"
+              alt="Dreamcatcher Image 7"
+              class="w-full h-[100px] md:h-[300px] object-cover rounded-lg shadow-lg cursor-pointer group-hover:scale-105 transition-all duration-300"
+              onclick="openPopup('gallery-dream-7.jpg')"
+            />
+          </div>
+
+          <!-- Gallery Item 17 -->
+          <div class="relative group">
+            <img
+              src="gallery-embro-2.jpg"
+              alt="Embroidery Image 2"
+              class="w-full h-[100px] md:h-[300px] object-cover rounded-lg shadow-lg cursor-pointer group-hover:scale-105 transition-all duration-300"
+              onclick="openPopup('gallery-embro-2.jpg')"
+            />
+          </div>
+
+          <!-- Gallery Item 18 -->
+          <div class="relative group">
+            <img
+              src="gallery-gift-2.jpg"
+              alt="Gift Image 2"
+              class="w-full h-[100px] md:h-[300px] object-cover rounded-lg shadow-lg cursor-pointer group-hover:scale-105 transition-all duration-300"
+              onclick="openPopup('gallery-gift-2.jpg')"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Full Image Popup -->
+    <div
+      id="popup"
+      class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 opacity-0 pointer-events-none transition-opacity duration-500"
+      onclick="closePopup(event)"
+    >
+      <div
+        class="relative transition-transform duration-500 transform scale-90"
+      >
+        <img id="popupImage" class="max-w-full max-h-screen object-contain" />
+        <button
+          class="absolute top-2 right-2 text-white text-3xl"
+          onclick="closePopup(event)"
+        >
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="bg-white py-8 shadow-md">
+      <div
+        class="container mx-auto flex flex-col justify-center gap-2 items-center px-4"
+      >
+        <div class="text-gray-600 text-sm">
+          &copy; 2024 Dream Craft's. All Rights Reserved.
+        </div>
+        <h2>Follow Us</h2>
+        <div class="flex space-x-6">
+          <a
+            href="https://www.instagram.com/dream_crafts1"
+            class="text-rose-600 hover:underline hover:text-rose-500 transition-all duration-300"
+            target="_blank"
+            ><i class="fab fa-instagram"></i> Instagram</a
+          >
+      </div>
+    </footer>
+
+    <!-- Contact Us Button -->
+    <button
+      id="contactButton"
+      class="fixed bottom-8 right-8 bg-rose-500 text-white p-4 rounded-full shadow-lg hover:bg-rose-600 focus:outline-none"
+    >
+      <i class="fas fa-comments"></i>
+      <span class="ml-2 hidden lg:inline"> Oder Now </span>
+    </button>
+
+    <!-- Contact Us Banner -->
+    <div
+      id="contactBanner"
+      class="hidden fixed bottom-16 right-8 bg-white shadow-lg rounded-lg border-2 border-rose-500 p-4 w-64 contact-banner z-50"
+    >
+      <h3 class="text-lg font-semibold text-gray-800 mb-4">Contact Us</h3>
+      <div class="space-y-3">
+        <a
+          href="https://www.instagram.com/dream_crafts1/me"
+          target="_blank"
+          class="flex items-center text-rose-500 hover:text-rose-600"
+        >
+          <i class="fab fa-instagram mr-2"></i> Instagram
+        </a>
+        <a
+          href="https://wa.me"
+          target="_blank"
+          class="flex items-center text-teal-500 hover:text-teal-600"
+        >
+          <i class="fab fa-whatsapp mr-2"></i> WhatsApp
+        </a>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+      const menuIcon = document.querySelector(".menu-icon");
+      const responsiveNav = document.querySelector(".responsive-nav");
+      const contactButton = document.getElementById("contactButton");
+      const contactBanner = document.getElementById("contactBanner");
+      const headerContactLink = document.getElementById("headerContactLink");
+
+      menuIcon.addEventListener("click", () => {
+        responsiveNav.classList.toggle("active");
+      });
+
+      // Toggle banner visibility on button click
+      contactButton.addEventListener("click", (event) => {
+        contactBanner.classList.toggle("hidden");
+        event.stopPropagation(); // Prevent closing immediately when button is clicked
+      });
+
+      // Toggle banner visibility when clicking the header "Contact" link
+      headerContactLink.addEventListener("click", (event) => {
+        event.preventDefault(); // Prevent default anchor behavior
+        contactBanner.classList.toggle("hidden");
+      });
+
+      // Close banner when clicking outside
+      document.addEventListener("click", (event) => {
+        if (
+          !contactBanner.classList.contains("hidden") &&
+          !contactBanner.contains(event.target) &&
+          event.target !== contactButton &&
+          event.target !== headerContactLink
+        ) {
+          contactBanner.classList.add("hidden");
+        }
+      });
+
+      function openPopup(imageSrc) {
+        const popup = document.getElementById("popup");
+        const popupImage = document.getElementById("popupImage");
+
+        // Set the image source for the popup
+        popupImage.src = imageSrc;
+
+        // Trigger the transition and make the popup visible
+        setTimeout(() => {
+          popup.classList.remove("opacity-0", "pointer-events-none");
+          popup.classList.add("opacity-100");
+        }, 10); // Small delay to trigger transition
+
+        // Scale up the popup image for a smooth effect
+        const popupContent = popup.querySelector("div");
+        popupContent.classList.remove("scale-90");
+        popupContent.classList.add("scale-100");
+      }
+
+      function closePopup(event) {
+        const popup = document.getElementById("popup");
+        const popupContent = popup.querySelector("div");
+
+        // Close the popup with a smooth transition
+        if (event.target === popup || event.target.tagName === "BUTTON") {
+          popup.classList.add("opacity-0", "pointer-events-none");
+          popup.classList.remove("opacity-100");
+
+          // Scale down the content of the popup for a smooth close effect
+          popupContent.classList.add("scale-90");
+          popupContent.classList.remove("scale-100");
+        }
+      }
+    </script>
+  </body>
+</html>
