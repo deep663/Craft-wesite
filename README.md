@@ -1,6 +1,6 @@
 # Handcrafted Gifts Website
 
-Welcome to the Handcrafted Gifts Website! This is portfolio website for handcrafted gifts where users can explore and purchase beautifully crafted handmade gifts.
+Welcome to the Handcrafted Gifts Website! This is portfolio website for handcrafted gifts where users can explore and purchase beautifully crafted handmade gifts. [Live-view](https://deam-craft.vercel.app/)
 
 ## Features
 - **Home Page** : Showcases featured handcrafted items.
